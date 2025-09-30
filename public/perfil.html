@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <title>Perfil</title>
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-  <h2 id="welcomeMsg">Bem-vindo!</h2>
-  <button onclick="logout()">Logout</button>
-  <p id="timer">Sessão expira em: 60s</p>
-
-  <h3>Testar códigos de status</h3>
-  <button onclick="testarRota('/sucesso')">200 - Sucesso</button>
-  <button onclick="testarRota('/criar', 'POST')">201 - Criar</button>
-  <button onclick="testarRota('/nao-encontrado')">404 - Não encontrado</button>
-  <button onclick="testarRota('/nao-autorizado')">401 - Não autorizado</button>
-  <button onclick="testarRota('/proibido')">403 - Proibido</button>
-  <button onclick="testarRota('/somente-get', 'POST')">405 - Método não permitido</button>
-  <button onclick="testarRota('/usuario', 'POST')">409 - Conflito</button>
-  <button onclick="testarRota('/limite')">429 - Muitas requisições</button>
-  <button onclick="testarRota('/manutencao')">503 - Servidor indisponível</button>
-
-  <div id="resultado" style="margin-top:20px; border:1px solid #000; padding:10px;">
+  <div class="PaginaRotas">
+    <h2  id="welcomeMsg">Bem-vindo!</h2>
+    <button onclick="logout()">Logout</button>
+    <p id="timer">Sessão expira em: 60s</p>
+   
+    <h3>Testar códigos de status</h3>
+    <div class="botoes">
+    <button onclick="testarRota('/sucesso')">200 - Sucesso</button>
+    <button onclick="testarRota('/criar', 'POST')">201 - Criar</button>
+    <button onclick="testarRota('/nao-encontrado')">404 - Não encontrado</button>
+    <button onclick="testarRota('/nao-autorizado')">401 - Não autorizado</button>
+    <button onclick="testarRota('/proibido')">403 - Proibido</button>
+    <button onclick="testarRota('/somente-get', 'POST')">405 - Método não permitido</button>
+    <button onclick="testarRota('/usuario', 'POST')">409 - Conflito</button>
+    <button onclick="testarRota('/limite')">429 - Muitas requisições</button>
+    <button onclick="testarRota('/manutencao')">503 - Servidor indisponível</button>
+  </div>
+   <div id="resultado">
     <strong>Resultado aparecerá aqui...</strong>
   </div>
+  </div>
+
 
   <script>
     let countdown = 60;
@@ -79,4 +86,5 @@
     };
   </script>
 </body>
+
 </html>

@@ -9,6 +9,7 @@ body {
     background: url(img/Blobs.jpeg) no-repeat;
     background-size: cover;
 }
+
 .titulo {
     text-align: center;
     align-items: center;
@@ -31,13 +32,91 @@ body {
     padding-top: 25px;
     box-shadow: solid black 50px;
     border: solid 2px white;
-    font
-button{
-    margin-top: 20px; 
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255, 0.95);
-    padding: 15px;
-    color: rgb(0, 0, 0);
-    border: none;
+
+    button {
+        margin-top: 30px;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255, 0.95);
+        padding: 15px;
+        color: rgb(0, 0, 0);
+        border: none;
+    }
+
+    button {
+
+        padding: 8px 16px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #468f73;
+        ;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999;
+    }
+
+    button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    button:hover {
+        background-color: #3e8e41
+    }
+
+
+    input {
+        border-radius: 5px;
+        border: none;
+        background-color: #ffffff;
+        padding: 10px;
+        margin-bottom: 5px;
+        font-style: none;
+    }
 }
+
+.PaginaRotas {
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 25px;
+    border: solid 2px white;
+    border-radius: 10px;
+    display: flex;
+    max-width: 80vw;
+    max-height: 80vh;
+    flex-direction: column;
+
+    button {
+        margin: 5px;
+        padding: 8px 16px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #468f73;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 2px #999;
+    }
+
+    button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    button:hover {
+        background-color: #3e8e41
+    }
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
 }
